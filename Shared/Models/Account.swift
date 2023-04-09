@@ -73,7 +73,7 @@ extension Account {
                 record.account = self
             }
 
-            month = Calendar.utc.date(byAdding: .month, value: 1, to: month)!
+            month = Calendar.utc.date(byAdding: .day, value: 1, to: month)!
         }
     }
 }

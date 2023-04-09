@@ -63,14 +63,14 @@ extension Record {
 
     static let monthFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMMM yyyy"
+        formatter.dateFormat = "dd MMMM yyyy"
         formatter.timeZone = .utc
         return formatter
     }()
 
     static let closeDateFormatter: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MM/dd/yyyy"
+        formatter.dateFormat = "dd/MM/yyyy"
         formatter.timeZone = .utc
         return formatter
     }()

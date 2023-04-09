@@ -28,9 +28,14 @@ extension Date {
     var month: Int {
         Calendar.utc.component(.month, from: self)
     }
+    
+    var day: Int {
+        Calendar.utc.component(.day, from: self)
+    }
+
 
     var startOfMonth: Date {
-        let components = Calendar.utc.dateComponents([.year, .month], from: Calendar.utc.startOfDay(for: self))
+        let components = Calendar.utc.dateComponents([.year, .month,.day], from: Calendar.utc.startOfDay(for: self))
         return Calendar.utc.date(from: components)!
     }
 
